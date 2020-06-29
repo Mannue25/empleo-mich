@@ -1,0 +1,333 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Biryani', sans-serif;
+
+}
+
+/* header de la página*/
+.menu-logo img {
+    width: 150px;
+    margin: 10px;
+}
+
+
+.nav-menu ul {
+    list-style-type: none;
+    float: right;
+    margin: 40px;
+    padding: 20px;
+    font-size: 16px;
+    
+    
+}
+
+.nav-menu ul li {
+    display: inline;
+    padding: 20px 20px; 
+    
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #1A648F;
+}
+
+
+
+.nav-menu ul li a:hover {
+    cursor: pointer;
+    color: #69B1DB;
+    
+}
+
+/* responsive - botton */
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+/* banner principal*/
+
+.banner {
+    padding-top: 2em;
+    width: 100%;
+    background-color: #11405C;  
+    display: inline-block;
+}
+.banner img {
+    width: 750px;
+    float: right; 
+}
+
+.container-text {
+
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.welcome {
+    width: 300px;
+    background-color: #91BECF;
+    text-align: center;
+    margin-left: 40px;
+    padding: 1px;
+    border: #6A8B97 solid 1px;
+    border-radius: 2em;
+}
+
+
+
+.welcome h2 {
+    font-size: 18px;
+    font-weight: 800;
+
+}
+.welcome h2 a {
+    text-decoration: none;
+    color: #214552;
+}
+
+/* Body vacantes destacadas */
+
+.noticias { 
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: #91BECF;
+    font-weight: bold;
+}
+
+ .container-div {
+    display: grid;
+    grid-template-rows: repeat(4, 50%);
+    grid-template-columns: repeat(4, 2fr); 
+    grid-gap: 20px 10px;
+    align-self: end;
+    
+ }
+
+ .vacante1 {
+    background-color: #395D70;
+    width: 90%;
+    height: 300px;
+ }
+
+.vacante1 img {
+    
+    width: 140px; 
+    height: auto;
+    margin-left: 80px;
+    margin-top: 5px; 
+  
+}
+.vacante1 p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+ .btn {
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100px;
+    background-color: white;
+    border-radius: 2em;
+    margin: auto;
+}
+
+.vacante1 a {
+    text-align: center;
+    color: #2889BD;
+    text-decoration: none;
+   
+   
+}
+
+/* sección ptat */
+
+.ptat {
+    width: 100%;
+    background-color: #11405C;
+}
+
+.intro  {
+    text-align: end;
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 15px;
+    color: #91BECF;
+}
+
+.text2 {
+    text-align: end;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    color:white;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.ptat img {
+
+    width: 450px;
+    float: left;
+    margin-bottom: 80px;
+
+}
+
+
+/* formulario de contacto */
+
+.formulario {
+    background-color:#91BECF;
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: 0px 2px 2px rgba(0, 0,0, .1);
+    margin-top: 80px;
+
+}
+
+.formulario p {
+    
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+
+}
+
+input[type=text]  {
+    text-align: left;
+    width: 90%;
+    padding: 13px 22px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #91BECF;
+    border-radius: 6px;
+}
+
+textarea {
+    text-align: left;
+    width: 90%;
+    padding: 13px 22px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #91BECF;
+    border-radius: 6px;  
+}
+input[type=submit] {
+    width: 100px;
+    background-color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: 1px solid #91BECF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Biryani', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    align-content: center;
+
+}
+
+/* footer */
+
+.foot {
+    width: 100%;
+    background-color: #11405C;
+    font-size: 10px;
+    color: antiquewhite;
+    text-align: center;
+
+}
+
+/* mediaqueries  and Breakpoints */
+
+@media(max-width: 700px) {
+
+    .menu-logo {
+        margin-top: -35px;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .nav-menu ul li {
+        display: block;
+    }
+     .nav-menu ul  {
+         
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-color: #91BECF;
+         height: 100%;
+         padding: 30px;
+         opacity: .9;
+         transform: translate(-400px);
+         transition: transform .5s ease-in-out;
+
+     }
+     
+     .nav-menu ul.show {
+         transform: translateX(-20px);
+        
+     }
+     .menu-log lu .nav-menu li {
+         padding: 20px;
+         font-size: 14px;
+     }
+     .welcome {
+         margin-bottom: 10px;
+     }
+     .banner .ptat {
+         width: 80%;
+     }
+     .container-div {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(2, 1fr);
+     }
+
+}
+
+@media(max-width: 500px) {
+
+    .banner img {
+        width: 500px;
+    }
+    .container-div {
+        grid-template-columns: 2fr;
+        grid-template-rows: 2fr;
+        
+    }
+    .welcome {
+       display: none;
+    
+}
+.vacante1 {
+    width: 100%;
+    padding: 10px 10px;
+}
+.vacante1 img {
+    height: 200px;
+}
+.banner .ptat {
+    width: 100%;
+    padding: 60px 20px;
+}
+    
+    
+}
