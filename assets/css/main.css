@@ -1,6 +1,7 @@
 
 body {
-    margin: 0;
+    width: 90%;
+    margin: auto;
     padding: 0;
     font-family: 'Biryani', sans-serif;
 
@@ -109,52 +110,59 @@ body {
 }
 
  .container-div {
+    margin: 0 auto;
+    max-width: 1000px;
     display: grid;
-    grid-template-rows: repeat(4, 50%);
-    grid-template-columns: repeat(4, 2fr); 
-    grid-gap: 20px 10px;
-    align-self: end;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
     
  }
 
  .vacante1 {
+     box-shadow: 0 0 3px rgba(0,0 0, .1);
     background-color: #395D70;
-    width: 90%;
-    height: 300px;
+    
+    
+ }
+ .vacante1 img {
+     width: 100%;
+     display: block;
+ }
+.parrafo {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    color: white;
+
+}
+.parrafo > p:first-of-type {
+   margin-top: 0;
+}
+.parrafo > p:last-of-type {
+    margin-bottom: 0;
  }
 
-.vacante1 img {
-    
-    width: 140px; 
-    height: auto;
-    margin-left: 80px;
-    margin-top: 5px; 
-  
-}
-.vacante1 p {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-    color: white;
-    font-weight: 500;
-}
-
- .btn {
-    display:flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100px;
+ .parrafo-info {
+    color: #2889BD;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: white;
-    border-radius: 2em;
-    margin: auto;
-}
+    font-size: 0.8em;
+    border-bottom: 2px solid #91BECF;
+ }
 
-.vacante1 a {
-    text-align: center;
+
+.parrafo-info a {
     color: #2889BD;
     text-decoration: none;
    
    
+}
+
+.parrafo-info a:hover {
+    text-decoration: underline;
 }
 
 /* sección ptat */
@@ -197,6 +205,7 @@ body {
     padding: 12px 20px;
     border-radius: 6px;
     box-shadow: 0px 2px 2px rgba(0, 0,0, .1);
+    margin: auto;
     margin-top: 80px;
 
 }
@@ -260,7 +269,7 @@ input[type=submit] {
 @media(max-width: 700px) {
 
     .menu-logo {
-        margin-top: -35px;
+        margin-top: -30px;
     }
     .menu-btn {
         display: block;
@@ -286,7 +295,7 @@ input[type=submit] {
          transform: translateX(-20px);
         
      }
-     .menu-log lu .nav-menu li {
+     .menu-log ul .nav-menu li {
          padding: 20px;
          font-size: 14px;
      }
@@ -294,12 +303,14 @@ input[type=submit] {
          margin-bottom: 10px;
      }
      .banner .ptat {
-         width: 80%;
+         width: 90%;
      }
      .container-div {
-         grid-template-columns: repeat(2, 1fr);
-         grid-template-rows: repeat(2, 1fr);
+         grid-template-columns: repeat(1, 1fr);
      }
+     .vacante1 img {
+        height: auto;
+    }
 
 }
 
@@ -309,8 +320,7 @@ input[type=submit] {
         width: 500px;
     }
     .container-div {
-        grid-template-columns: 2fr;
-        grid-template-rows: 2fr;
+        grid-template-columns:  2fr
         
     }
     .welcome {
@@ -318,11 +328,10 @@ input[type=submit] {
     
 }
 .vacante1 {
-    width: 100%;
-    padding: 10px 10px;
+    width: 90%;
 }
 .vacante1 img {
-    height: 200px;
+    height: auto;
 }
 .banner .ptat {
     width: 100%;
