@@ -1,7 +1,9 @@
 
 body {
+    width: 95;
     margin: auto;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Biryani', sans-serif;
 
 }
@@ -9,7 +11,7 @@ body {
 /* header de la página*/
 .menu-logo img {
     width: 150px;
-    margin: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -110,7 +112,7 @@ body {
 
  .container-div {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
     gap: 20px;
@@ -168,10 +170,12 @@ body {
 
 .ptat {
     width: 100%;
+    height: 100%;
     background-color: #11405C;
 }
 
 .intro  {
+    padding: 12px;
     text-align: end;
     font-size: 30px;
     font-weight: 500;
@@ -186,6 +190,7 @@ body {
     color:white;
     font-size: 25px;
     font-weight: 800;
+    line-height: 1.5em;
 }
 
 .ptat img {
@@ -205,7 +210,7 @@ body {
     border-radius: 6px;
     box-shadow: 0px 2px 2px rgba(0, 0,0, .1);
     margin: auto;
-    margin-top: 80px;
+    margin-top: 110px;
 
 }
 
@@ -221,7 +226,7 @@ body {
 input[type=text]  {
     text-align: left;
     width: 90%;
-    padding: 13px 22px;
+    padding: 15px 22px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #91BECF;
@@ -257,10 +262,17 @@ input[type=submit] {
 .foot {
     width: 100%;
     background-color: #11405C;
-    font-size: 10px;
-    color: antiquewhite;
+    
+}
+.foot p {
+    font-size: 12px;
     text-align: center;
-
+    padding: px;
+}
+.foot a {
+    color: #91BECF;
+    padding: 1em;
+    
 }
 
 /* mediaqueries  and Breakpoints */
@@ -299,11 +311,19 @@ input[type=submit] {
          font-size: 14px;
      }
      .welcome {
-         margin-bottom: 10px;
+         margin-bottom: 40px;
      }
      .banner .ptat {
-         width: 90%;
-     }
+        width: 100%;
+        float: left;
+
+    }
+    .intro {
+        text-align: center;
+    }
+    .text2 {
+        text-align: justify;
+    }
      .container-div {
          grid-template-columns: repeat(1, 1fr);
      }
@@ -313,41 +333,41 @@ input[type=submit] {
 
 }
 
-@media(max-width: 450px) {
+@media(max-width: 500px) {
 
-    .banner {
-        width: 100%;
-        margin: 0 auto;
+    body {
+       max-width: 1000px;
     }
-
     .banner img {
-        max-width: 450px;
-        width: 400px;
+        width: 500px;
     }
-    .container-div {
-        width: 100%;
-        
-    }
-    .welcome {
-       display: none;
-    
-}
-.vacante1 {
-    width: 100%;
-    margin: auto ;
-   
-}
-.vacante1 img {
-    width: 400px;
-    max-width: 450px;
-    height: auto;
-}
 .banner .ptat {
     width: 100%;
     padding: 60px 20px;
 }
- .noticia {
+.intro {
+    text-align: center;
+}
+.text2 {
+    text-align: justify;
+}
+.welcome {
+    display: none;
+}
+.container-text {
+    text-align: center;
+}
+ .noticias {
      font-size: 14px;
+ }
+.floot {
+    padding-top: 1em;
+}
+ .redes a  {
+     text-align: center;
+     font-size: 20px;
+     padding: 1em;
+     color:#91BECF;
  }
     
 }
